@@ -12,7 +12,7 @@
 2. **fork仓库不会立即执行action, 需要手动开启action**
 3. **编辑要提交的问题**
    - 根据个人情况修改 config.yml 中的内容。
-   - 如果不懂如何配置请用 [auto-submit](https://github.com/ZimoLoveShuang/auto-submit) 项目中的 generate.py 生成一个配置文件。
+   - 如果不懂如何配置请用 [auto-submit](https://github.com/ZimoLoveShuang/auto-submit) 项目中的 generate.py 生成一个配置文件。（注意更新里面的URL）
    - 多用户命名规则，把 config.yml 改成独特的名字，比如：config_xxxx.yml。
 4. **获取sckey，推送每日运行结果**  
    1. 前往 [sct.ftqq.com](http://sct.ftqq.com/login) 扫码登录，创建一个账号并绑定微信。
