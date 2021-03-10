@@ -11,8 +11,9 @@ on:
     branches:
       - main
   schedule:
-    # 每天北京时间8点执行，第二个0代表小时，以此类推，如：9点——'0 1 * * *''
-    - cron: '30 22 * * *'
+    # 每天北京时间7点30执行，第二个0代表小时 分别代表 分钟 小时
+    - cron: '30 23 * * *'
+  workflow_dispatch:
 
 jobs:
   submit_user1:
