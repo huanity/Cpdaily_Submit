@@ -1,0 +1,58 @@
+#登陆相关配置
+login:
+  #开放的模拟登陆api服务器地址 
+  api: "http://www.zimo.wiki:8080/wisedu-unified-login-api-v1.0/api/login"
+
+#今日校园相关配置
+cpdaily:
+  #表单组默认选项配置
+  defaults:
+    - default:
+        title: 你的学生类别？
+        type: 2
+        value: 本科生
+    - default:
+        title: 你属于下列哪个校区学生?
+        type: 2
+        value: 开发区校区
+    - default:
+        title: 你目前是否在校？
+        type: 2
+        value: 在校
+    - default:
+        title: 你目前是否有疑似/确诊新冠肺炎？
+        type: 2
+        value: 否
+    - default:
+        title: 你目前是否有发热、咳嗽等症状?
+        type: 2
+        value: 否
+    - default:
+        title: 你目前是否已就诊或正在住院?
+        type: 2
+        value: 否
+    - default:
+        title: 你目前是否被隔离？
+        type: 2
+        value: 否
+    - default:
+        title: 近1个月是否去过重点疫区或接触过重点疫区人士？
+        type: 2
+        value: 否
+    - default:
+        title: 近1个月是否接触过确诊病例？
+        type: 2
+        value: 否
+    - default:
+        title: 近1个月是否接触过疑似病例？
+        type: 2
+        value: 否
+    - default:
+        title: 你今天的体温是多少？
+        type: 2
+        value: 36~37.2℃
+    - default:
+        title: 本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+        type: 2
+        value: 是
+
