@@ -292,7 +292,7 @@ def sendServerChan(msg, sckey):
     log('正在发送Qmsg酱。。。')
     res = requests.post(url='https://qmsg.zendee.cn/send/{0}'.format(sckey),
                             data={'msg': str(msg) + "\n" + getTimeStr()})
-    code = res.json()['success']
+    code = res.json()['success'] #获取返回值：{"success":true,"reason":"操作成功","code":0,"info":{}}
     if code:
         log('发送Qmsg酱通知成功。。。')
     else:
