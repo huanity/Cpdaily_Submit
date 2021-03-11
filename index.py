@@ -275,17 +275,30 @@ def submitForm(formWid, address, collectWid, schoolTaskWid, form, session, host)
     return msg
 
 
-# server酱通知
+# # server酱通知
+# def sendServerChan(msg, sckey):
+#     log('正在发送Server酱。。。')
+#     res = requests.post(url='https://sctapi.ftqq.com/{0}.send'.format(sckey),
+#                             data={'title': str(msg) + "\n" + getTimeStr()})
+#     code = res.json()['data']['error']
+#     if code == 'SUCCESS':
+#         log('发送Server酱通知成功。。。')
+#     else:
+#         log('发送Server酱通知失败。。。')
+#         log('Server酱返回结果'+code)
+
+# Qmsg酱通知
 def sendServerChan(msg, sckey):
-    log('正在发送Server酱。。。')
-    res = requests.post(url='https://sctapi.ftqq.com/{0}.send'.format(sckey),
-                            data={'title': str(msg) + "\n" + getTimeStr()})
+    log('正在发送Qmsg酱。。。')
+    res = requests.post(url='https://qmsg.zendee.cn/send/{0}'.format(sckey),
+                            data={'msg': str(msg) + "\n" + getTimeStr()})
     code = res.json()['data']['error']
     if code == 'SUCCESS':
-        log('发送Server酱通知成功。。。')
+        log('发送Qmsg酱通知成功。。。')
     else:
-        log('发送Server酱通知失败。。。')
-        log('Server酱返回结果'+code)
+        log('发送Qmsg酱通知失败。。。')
+        log('Qmsg酱返回结果'+code)
+
 
 
 # 综合提交
