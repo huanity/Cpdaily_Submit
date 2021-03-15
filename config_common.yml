@@ -6,7 +6,6 @@ login:
 #今日校园相关配置
 cpdaily:
   #表单组默认选项配置
-  defaults:
     - default:
         title: 你的学生类别？
         type: 2
@@ -15,10 +14,6 @@ cpdaily:
         title: 你属于下列哪个校区学生?
         type: 2
         value: 开发区校区
-    - default:
-        title: 你目前是否在校？
-        type: 2
-        value: 在校
     - default:
         title: 你目前是否有疑似/确诊新冠肺炎？
         type: 2
@@ -55,5 +50,6 @@ cpdaily:
         title: 本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
         type: 2
         value: 是
+
         
         
