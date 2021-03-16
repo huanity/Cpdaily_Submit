@@ -16,6 +16,10 @@ cpdaily:
         type: 2
         value: 开发区校区
     - default:
+        title: 你目前是否在校？
+        type: 2
+        value: 在校
+    - default:
         title: 你目前是否有疑似/确诊新冠肺炎？
         type: 2
         value: 否
