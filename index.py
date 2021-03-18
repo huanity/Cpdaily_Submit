@@ -106,7 +106,7 @@ def getSession(user, loginUrl, config):
 
     cookies = {}
     # 借助上一个项目开放出来的登陆API，模拟登陆
-    if user['login_api']:
+    if('login_api' in user.keys() and user['login_api']):
         res = requests.post(user['login_api'], params, verify=not debug)
     else:
         res = requests.post(config['login']['api'], params, verify=not debug)
