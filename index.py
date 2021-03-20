@@ -30,7 +30,7 @@ def getYmlConfig(yaml_file):
 def getCpdailyApis(user):
     apis = {}
     schools = requests.get(
-        url='https://static.campushoy.com/apicache/tenantListSort', verify=not debug).json()['data']  #bug修复，数据类型 单引号改为双引号 "data"
+        url='https://mobile.campushoy.com/v6/config/guest/tenant/list', verify=not debug).json()['data']  #bug修复，数据类型 单引号改为双引号 "data"
     flag = True
     for one in schools:
         if one['name'] == user['school']:
